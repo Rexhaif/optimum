@@ -168,7 +168,7 @@ class OptimizedModel(ABC):
                 try:
                     api.upload_file(
                         token=huggingface_token,
-                        repo_id=f"{user['name']}/{repository_id}",
+                        repo_id=repository_id,
                         path_or_fileobj=os.path.join(os.getcwd(), local_file_path),
                         path_in_repo=hub_file_path,
                     )
