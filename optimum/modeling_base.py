@@ -156,8 +156,7 @@ class OptimizedModel(ABC):
 
         api.create_repo(
             token=huggingface_token,
-            name=repository_id,
-            organization=user["name"],
+            repo_id=repository_id,
             exist_ok=True,
             private=private,
         )
